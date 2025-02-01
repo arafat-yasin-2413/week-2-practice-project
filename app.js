@@ -3,7 +3,7 @@ document.getElementById("search-button").addEventListener("click", () => {
 	const searchValue = document
 		.getElementById("search-input")
 		.value.trim()
-		.toLowerCase(); // corrected toLower() to toLowerCase()
+		.toLowerCase();
 
 	console.log(searchValue);
 
@@ -75,7 +75,7 @@ const showMealDetails = (meal) => {
 
 	const showMealContainer = document.getElementById("show-meal-details-parent");
 
-	// Clear the show-meal-details-parent before appending new card
+
 	showMealContainer.innerHTML = "";
 
 	mealCard.innerHTML = `
@@ -93,7 +93,7 @@ const showMealDetails = (meal) => {
 		</div>
     `;
 
-	// Append the meal details card to the show-meal-details-parent div
+
 	showMealContainer.appendChild(mealCard);
 };
 
@@ -110,28 +110,6 @@ const generateIngredientList = (meal) => {
 	}
 	return ingredients.join("");
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
