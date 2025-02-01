@@ -22,7 +22,7 @@ document.getElementById("search-button").addEventListener("click", () => {
 			const allMeal = data.meals;
 
 			if (!allMeal) {
-				document.getElementById("food-container").innerHTML =
+				document.getElementById("no-meals-found-container").innerHTML =
 					'<p class="no-meals-found" >No Meals Found. </p>';
 				return;
 			} else {
